@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 
+const Color cardColor = Colors.white60;
+
 class CardIconGender extends StatelessWidget {
-  CardIconGender({required this.CardText, this.CardIcon});
-  final String CardText;
-  final IconData? CardIcon;
+  CardIconGender({required this.cardText, this.cardIcon});
+  final String cardText;
+  final IconData? cardIcon;
 
   @override
   Widget build(BuildContext context) {
@@ -11,18 +13,18 @@ class CardIconGender extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         Icon(
-          CardIcon,
+          cardIcon,
           size: 90.0,
-          color: Colors.white60,
+          color: Colors.white,
         ),
         const SizedBox(
           height: 10.0,
         ),
         Text(
-          CardText,
+          cardText,
           style: TextStyle(
             fontSize: 20.0,
-            color: Colors.white60,
+            color: Colors.white,
           ),
         ),
       ],

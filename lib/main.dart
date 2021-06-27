@@ -13,6 +13,10 @@ void main() {
         ),
       ),
     ),
-    home: InputPage(),
+    initialRoute: '/',
+    routes: {
+      '/': (context) => InputPage(),
+      '/result': (context) => ResultPAge(),
+    },
   ));
 }
